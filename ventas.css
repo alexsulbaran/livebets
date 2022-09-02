@@ -1,0 +1,18 @@
+.ventas p {
+  font-size: 2em;
+  text-align: center;
+}
+
+.div_baseball {
+  width: 4%;
+}
+
+.div_basketball {
+  width: 6%;
+}
+
+
+.div_table_header {
+	background-color: #6C757D;
+	color: azure;
+}
