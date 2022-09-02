@@ -1,0 +1,389 @@
+boby {
+  overflow-y: hidden;
+  height: 90vh;
+}
+
+.blink {
+  animation: blink-animation 1s steps(3, start) infinite;
+  -webkit-animation: blink-animation 1s steps(3, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+p {
+ margin-bottom: 0 !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+div {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.965em;
+}
+
+#menu_sports{
+  margin-top: 0.31rem;
+}
+
+.point-sales {
+ padding-left: 1rem;
+ padding-top: 0.3rem;
+ padding-right: 0px;
+ margin-right: 0px;
+}
+
+.first_block{
+  margin-top: 5px;
+  width: 13% !important;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 98vh;
+}
+
+.second_block{
+  margin-top: 5px;
+  padding-top: 5px;
+  width: 59% !important;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 98vh;
+  overflow-y: scroll;
+}
+
+.third_block{
+  margin-top: 5px;
+  padding-left: 5px;
+  width: 25% !important;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 98vh;
+}
+
+.league-name {
+  background-color: #bebdbd;
+  padding-left: 5px;
+  padding-top: 8px;
+  height: 30px !important;
+  color: black;
+  padding-right: 0px;
+}
+
+.league-name p {
+  background-color: #bebdbd;
+  font-size: 0.80em !important;
+  color: black;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.league-name div {
+  background-color: #bebdbd;
+  font-size: 1em !important;
+  color: black;
+  margin-left: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.text-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em !important;
+  color: black;
+}
+
+.sport_bar {
+  background-color: black;
+  color: white;
+  font-size: 0.80em !important;
+  padding-left: 5px;
+  padding-top: 8px;
+  height: 30px !important;
+}
+
+
+.title {
+  margin: 0px;
+}
+
+.title-item {
+  text-align: center;
+}
+
+.title > div {
+  background-color: #343a40 !important;
+  color: white;
+  font-weight: bold;
+  padding-left: 0px;
+
+}
+
+.menu_item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+}
+
+.active_item *:not(.child) {
+  background-color: #7C080A !important;
+  color: white !important;
+  font-weight:600;
+}
+
+parent > .child *:not(img){
+  background-color: #7C080A !important;
+  color: white !important;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.without-left {
+  margin-left: 0px !important;
+}
+
+.hr-top {
+  margin-left: 0px !important;
+  height: 3px !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.top_bar {
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.marks-total {
+  font-weight: bold;
+  padding-top: 2vh;
+}
+
+.mtp {
+  color:crimson;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   margin-left: 0.25rem !important;
+   text-align: left !important;
+   font-size: 1em !important;
+
+}
+
+.main {
+  border-top: solid 2px #343a40;
+  background-color: rgba(105, 105, 105, 0.514);
+  padding-left: 0px;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.sub_type_ticket {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.item_active * {
+  background-color:#6D9200 ;
+  color: white;
+}
+
+.item_active_one * {
+  background-color:#6D9200 ;
+  color: white;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.item_separator {
+  background: rgba(76, 175, 80, 0);
+  color: white;
+  padding: 0px !important;
+  cursor: pointer !important;
+}
+
+.item_odds {
+  background-color: #343744;
+  border-radius: 4px;
+  border-style: none;
+  border-width: 1px;
+  height: 2.4em;
+  margin-right: 3px;
+  padding-left: 1em;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.4em;
+}
+
+.item_odds_active {
+  background-color: #6D9200;
+  border-radius: 4px;
+  border-style: none;
+  border-width: 1px;
+  height: 2.4em;
+  margin-right: 5px;
+  padding-left: 1em;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.4em;
+}
+.item_odds_screen1 {
+  background-color: #343744;
+  border-radius: 4px;
+  border-style: none;
+  border-width: 1px;
+  height: 2.9em;
+  margin-right: 5px;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.4em;
+}
+
+.item_odds_screen1_active {
+  background-color: #6D9200;
+  border-radius: 4px;
+  border-style: none;
+  border-width: 1px;
+  /* height: 2.4em; */
+  margin-right: 5px;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.4em;
+}
+
+.item_odds_right {
+  background-color: #343744;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.marks_title {
+  font-size: 1.4em;
+}
+
+.odds_only {
+  color: white;
+  font-weight: bold;
+}
+
+.height_one {
+  /* line-height: 3em; */
+}
+/* aqui prueba de menu */
+
+/* fin de menu  */
+
+.a_menu {
+  padding-left: 1em;
+  width: 100% !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 60px;
+  padding-top: 21px;
+}
+
+.swal-wide {
+  width:850px !important;
+}
+
+#div_menu {
+  min-height: 60vh;
+  height: 60vh;
+  /* position: relative; */
+  width: 100%;
+}
+
+input.separate {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.2em;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  color:#007bff !important;
+  font-weight: bold;
+  font-size: 0.8em !important;
+}
+
+.nav-link {
+  color: black !important;
+  font-size: 0.8em !important;
+}
+
+hr {
+  margin-bottom: 0px;
+}
+
+.row-left10{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -10px;
+}
+
+#body_ticket_complet {
+  position: fixed;
+  word-wrap: break-word;
+}
+
+.hide {
+  display: none
+}
+
+.show {
+  display: block
+}
+
+.match_amount_banner {
+  font-size: 0.9em;
+}
+
+.div_main3 {
+  border:#343a40;
+
+}
