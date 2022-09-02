@@ -1,0 +1,26 @@
+<div id="div_menu">
+  <div id="menu_sports">
+    <div class="menu_item" :class="option_menu_seleted == 0 ? 'active_item' : ''">
+      <div class="a_menu text-uppercase">
+        &starf;
+        <a  v-on:click="sport_selected = 'ALL';option_menu_seleted = 0;screen_type = 1">
+          <%= t(:point_sales)[:all] %> <span class="match_amount_banner badge badge-danger badge-counter">{{ count_matchs_menu(matchs_sports) }}</span>
+        </a>
+      </div>
+    </div>
+    <!-- aqui se repito todo el div por cada deporte-->
+    <div class="pr-1 menu_item" v-for="(sport, index) in sports"  :class="option_menu_seleted == (index + 1) ? 'active_item' : ''">
+      <div class="a_menu row mr-0 ml-0" v-if="total_games_by_sport(sport.id) > 0 && !evens_blocks.sports.includes(sport.id)">
+        <div v-html="sport.icon"></div>
+          <a class="ml-1 text-uppercase" v-on:click="sport_selected = sport.name;option_menu_seleted = (index + 1);screen_type = 1"> {{ sport.name }} <span class="match_amount_banner badge badge-danger badge-counter">{{ count_leagues(matchs_sports.find(x => x.id == sport.id).leagues) }}</span> </a>
+        </div>
+    </div>
+  </div>
+  <!-- aqui termina se repito todo el div por cada deporte-->
+</div>
+<div class="text-uppercase text-white bg-dark pl-2"> INFORMACION</div>
+<div class="pl-2 mt-1">
+  <p> - Resultados </p>
+  <p> - Reglamento </p>
+  <p> - Etc </p>
+</div>
